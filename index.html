@@ -12,28 +12,34 @@
         <div class="display" id="display">0</div>
 
         <!-- Buttons -->
-        <button class="btn clear" onclick="clearDisplay()">C</button>
-        <button class="btn backspace" onclick="backspace()">←</button>
-        <button class="btn operator" onclick="inputOperator('/')">÷</button>
+        <div class="first_row">
+            <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn backspace" onclick="backspace()">←</button>
+        </div>
+        
+
 
         <button class="btn digit" onclick="inputDigit(7)">7</button>
         <button class="btn digit" onclick="inputDigit(8)">8</button>
         <button class="btn digit" onclick="inputDigit(9)">9</button>
-        <button class="btn operator" onclick="inputOperator('*')">x</button>
+        <button class="btn operator" onclick="inputOperator('/')">÷</button>
+
 
         <button class="btn digit" onclick="inputDigit(4)">4</button>
         <button class="btn digit" onclick="inputDigit(5)">5</button>
         <button class="btn digit" onclick="inputDigit(6)">6</button>
-        <button class="btn clear" onclick="inputOperator('-')">-</button>
+        <button class="btn operator" onclick="inputOperator('*')">x</button>
+
 
         <button class="btn digit" onclick="inputDigit(1)">1</button>
         <button class="btn digit" onclick="inputDigit(2)">2</button>
         <button class="btn digit" onclick="inputDigit(3)">3</button>
-        <button class="btn clear" onclick="inputOperator('+')">+</button>
+        <button class="btn operator" onclick="inputOperator('-')">-</button>
 
-        <button class="btn zero" onclick="inputDigit(0)">0</button>
         <button class="btn decimal" onclick="inputDecimal()">.</button>
+        <button class="btn digit" onclick="inputDigit(0)">0</button>
         <button class="btn equal" onclick="calculateResult()">=</button>
+        <button class="btn operator" onclick="inputOperator('+')">+</button>
 
     </div>
     
